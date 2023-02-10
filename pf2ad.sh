@@ -48,8 +48,8 @@ mkdir -p /var/db/samba4/winbindd_privileged
 chown -R :proxy /var/db/samba4/winbindd_privileged
 chmod -R 0750 /var/db/samba4/winbindd_privileged
 
-fetch -o /usr/local/pkg -q https://https://raw.githubusercontent.com/GustavoLunaBH/PFSENSE2.6.0/main/samba.inc
-fetch -o /usr/local/pkg -q https://https://raw.githubusercontent.com/GustavoLunaBH/PFSENSE2.6.0/main/samba.xml
+fetch -o /usr/local/pkg -q https://raw.githubusercontent.com/GustavoLunaBH/PFSENSE2.6.0/main/samba.inc
+fetch -o /usr/local/pkg -q https://raw.githubusercontent.com/GustavoLunaBH/PFSENSE2.6.0/main/samba.xml
 
 /usr/local/sbin/pfSsh.php <<EOF
 \$samba = false;
